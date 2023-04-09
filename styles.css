@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------Main Body-----------*/
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+/*---------------Header/Navbar--------------------*/
+#header {
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    background-color: #242333;
+    opacity: 100%;
+}
+.container {  /*header container holds nav*/
+    padding: 15px 15%;
+    height: 100%;
+}
+nav {   /*Holds the Initials and nav link buttons*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.initials {
+    font-size: 75px;
+    color: #01B0D3;
+    width: 180px;
+    height: 80%;
+    text-align: center;
+    font-family: Courier;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+}
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+nav ul li a::after {   /*nav effects*/
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #01B0D3;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%
+}
+
+
+/*---------------Footer---------------*/
+footer {
+  list-style-type: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.link-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 40px;
+}
+.github-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.resume-img {
+    height: 40px;
+    width: 40px;
+    margin-left: 40px;
+}
+
+
+/*----------------First Content Section---------------------------*/
+#top-section {  /*container*/
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #242333;
+    color: #242333;
+}
+.container-left {
+    padding: 10px ;
+    width: 75%;
+    float: left;
+    height: 100%;
+}
+.container-right {
+    padding: 10px ;
+    width: 25%;
+    float: right;
+    height: 100%;
+}
+
+
+/*----------------Second Content Section(About Me)--------------*/
+#about-me {  /*container*/
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0px;
+    text-align: center;
+}
+.container-left1 {
+  padding: 10px ;
+  width: 50%;
+  float: left;
+  height: 92%;
+}
+.container-right2 {
+  padding: 10px ;
+  width: 50%;
+  float: right;
+  height: 92%;
+}
+#about-me h1 {
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+
+
+
+/*----------------Third Content Section(Projects)--------------*/
+#projects {  /*container*/
+    width: 100%;
+    height: 80vh;
+    padding: 0px;
+    background-color: #242333;
+}
+.container-P2 {
+    padding: 10px ;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    height: 100%;
+  }
+  .row {
+    margin: 0 -5px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card { /* Style the project cards */
+    box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    text-align: center;
+    color: #242333;
+    background-color: white;
+    height: 100%;
+    border-radius: 15px;
+  }
+  .card2 {
+    box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    text-align: center;
+    color: white;
+    background-color: #242333;
+    height: 100%;
+    border-radius: 15px;
+  }
+  .placeholder-img {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+    height: 40%;
+    width: 80%;
+  }
+  .column h3 {
+    padding: 40px;
+  }
+  .column p {
+    padding-top: 60px;
+  }
+
+  /*----Buttons------*/
+  .button1 {
+    color: #242333;
+    border: 2px solid #01B0D3;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #01B0D3;
+    transition: ease-out 0.4s;
+    text-decoration: none;
+    margin-top: 100px;
+    border-radius: 30px;
+  }
+  .button2 {
+    color: #FFF;
+    border: 2px solid #01B0D3;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #01B0D3;
+    transition: ease-out 0.4s;
+    text-decoration: none;
+    margin-top: 100px;
+    border-radius: 30px;
+  }
+  .button1:hover {
+    box-shadow: inset 400px 0 0 0 #01B0D3;
+  }
+  .button2:hover {
+    box-shadow: inset 400px 0 0 0 #01B0D3;
+  }
+
+/*------------Fourth Content Section(Contact Form)------------*/
+#contact {  /*container*/
+    width: 100%;
+    height: 80vh;
+    padding: 0px;
+    background-color: #242333;
+}
+.contact-container {
+    width: 75%;
+    margin: auto;
+    height: 80%;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+.contact-container h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    color: black;
+    border: 2px solid #01B0D3;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #01B0D3;
+    transition: ease-out 0.4s;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    box-shadow: inset 1500px 0 0 0 #01B0D3;
+  }
+
+
+/*----------Spacer Div---------*/
+#spacer1, #spacer2 {
+    height: 20vh;
+    width: 100%;
+    background-color: #242333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#spacer1 h1 {
+    font-size: 50px;
+    color: white;
+    padding: 80px;
+}
+
